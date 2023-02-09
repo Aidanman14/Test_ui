@@ -1,9 +1,10 @@
 if game.CoreGui:FindFirstChild("woof") then
    game.CoreGui.woof:Destroy()
 end
+
+if game:GetService("CoreGui"):FindFirstChild("Notifaction") then
    game:GetService("CoreGui").Notifaction:Destroy();
 end
-
 -- hello Leadi
 local Mainholder = {RainbowColorValue = 0, HueSelectionPosition = 0}
 

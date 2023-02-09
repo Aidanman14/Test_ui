@@ -1053,7 +1053,7 @@ function Tabs:Tab(Title)
    
    TabTitle.Name = "TabTitle"
    TabTitle.Parent = Tab
-   TabTitle.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+   TabTitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
    TabTitle.BackgroundTransparency = 1.000
    TabTitle.Position = UDim2.new(0.0566037744, 0, 0.100000001, 0)
    TabTitle.Size = UDim2.new(0, 150, 0, 29)
@@ -1063,7 +1063,7 @@ function Tabs:Tab(Title)
    TabTitle.TextSize = 17.000
    TabTitle.TextXAlignment = Enum.TextXAlignment.Left
    
-   TabGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(37, 150, 190))}
+   TabGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, getgenv().TabSettings.Gradient1), ColorSequenceKeypoint.new(1.00, getgenv().TabSettings.Gradient2)}
    TabGradient.Name = "TabGradient"
    TabGradient.Parent = Tab
 
